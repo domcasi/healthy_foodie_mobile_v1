@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anotherbg"
+    tools:context=".RegisterPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="557dp"
+        android:layout_marginBottom="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_register"
+                style="@style/titlesign"
+                android:text="@string/register"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/subtitle"
+                android:text="@string/name"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/input_name"
+                style="@style/contents"
+                android:ems="10"
+                android:hint="@string/enteryourname"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/username"
+                style="@style/subtitle"
+                android:text="@string/username"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/input_username"
+                style="@style/contents"
+                android:ems="10"
+                android:hint="@string/enterusername"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/password"
+                style="@style/subtitle"
+                android:text="@string/password"
+                android:textColor="@android:color/white" />
+
+
+            <EditText
+                android:id="@+id/input_password"
+                style="@style/contents"
+                android:ems="10"
+                android:hint="@string/enterpassword"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/confirm_password"
+                style="@style/subtitle"
+                android:text="@string/confirm"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/input_confirm"
+                style="@style/contents"
+                android:ems="10"
+                android:hint="@string/reenterpassword"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/reg_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/orange"
+                    android:text="@string/register"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/cancel"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

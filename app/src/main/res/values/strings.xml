@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Healthty Foodie M</string>
+
+    <string name="todo">TODO</string>
+
+    <string name="assessments">ASSESSMENTS</string>
+    <string name="take_pretest">TAKE PRETEST</string>
+    <string name="take_post_test">TAKE POST TEST</string>
+    <string name="play_game">PLAY GAME</string>
+    <string name="obj">The purpose of the project is to create a web-and-moobile based game application that will
+        prevent future complications of malnutrition and to provide an innovative teaching concept
+        that gives an opportunity for children to learn the basic nutrition food
+        groups and healthy food practices, and these will also help inculcate in children good
+        decision in choosing for healthy food options as early as possible. Good health and proper
+        nutrition are essential for a child to fully achieve his full potential for growth and development.
+    </string>
+    <string name="objectives">OBJECTIVES</string>
+    <string name="pur">The proposed system is intended to develop a Healthy Foodie Nutrition App that creates
+        and validates a modern interactive nutrition teaching module for the children, providing a fun activity
+        to learn more about nutrition. This application is designed to answer by children ranges from six to
+        ten years old, and it consists of different phases that are presented in English language that includes
+        a Filipino translation.
+    </string>
+    <string name="purpose">PURPOSE</string>
+    <string name="product_perspective">PRODUCT PERSPECTIVE</string>
+    <string name="perspective">The Healthy Foodie App is an educational, self-contained and a web-based game
+        application for children to learn and understand the importance of nutrition and how it impacts not
+        only their physical body but their health and lifestyle. Basically, it is a game for children and a
+        simple user interface for children to understand and comprehend. It is an application designed for
+        children to learn at the same time to have fun.
+    </string>
+    <string name="people_behind_healthy_foodie">PEOPLE BEHIND HEALTHY FOODIE</string>
+
+    //people behind
+    <string name="gan">Endocrinologist at the Nutrition center, UST pay Hospital</string>
+    <string name="email">Email Address: florence_rochelle_gan@yahoo.com</string>
+    <string name="catherine_bhel_carcha">CATHERINE BHEL CARCHA</string>
+    <string name="cathy">I am Cathy, 19 y/o Front-end Developer of Healthy Foodie Web application.
+        I am in charge in creating a user-friendly interface and design that can really attract the attention of the user.
+        I live in Mandaluyong City, Philippines. I really love being creative in many ways. And I am happy that I found
+        a way to share my creativity to others through the course I am pursuing right now. Some might say that I am different.
+        That I am weak in this field and I will not survive. At first, I couldn’t agree more on what they are saying but at
+        the end I know that I am on the right track. For me, it is by our own way on how we will choose to survive every
+        challenge we have. It is because of us why we can make things work out unexpectedly and end up enjoying what we do.</string>
+    <string name="cathemail">Email Address: cthy.bhel@gmail.com</string>
+    <string name="dominic_casino">DOMINIC MICHAEL CASIÑO</string>
+    <string name="doms">I am Dom. Currently 19 years old and currently residing in Pasig City. I develop mostly front end but can
+        also work on a little bit of back end. When working on a project, I like to understand the most that I can fron both the
+        front end ang back end of the project, so I can get a better perspective and perform my job more effectively.
+        My skills are gained from my school courses and on the job training but I am always willing to learn something new.
+        I also believe that constant communication with the team and the client is important in developing. </string>
+    <string name="domsemail">Email Address: domcasi25@gmail.com</string>
+    <string name="scott_pons">SCOTT PONS</string>
+    <string name="scott">I’m Scott 19 y/o Front-end and Back-End developer and programmer with focus in user experience and
+        minimalistic design, currently living in Marikina City, Philippines. I love what I do since I’ve started doing it.
+        I find every new experience as an opportunity to learn. My favorite projects are those that require me to push beyond
+        my boundaries and acquire new skills and knowledge in order to succeed. In my spare time I enjoy experimenting with
+        new frameworks and libraries.</string>
+    <string name="scottemail">Email Address: scottpons09@gmail.com</string>
+    <string name="developers">DEVELOPERS</string>
+    <string name="insert_info_here">INSERT INFO HERE</string>
+    <string name="iics_cnag_comdev">IICS-CNAG COMDEV</string>
+    <string name="client">CLIENT</string>
+    <string name="dr_florence_rochelle_gan">Dr. FLORENCE ROCHELLE GAN</string>
+    <string name="SPcheckbox">iics.dominicmichael.casino.healthyfoodiemob.checkbox</string>
+    <string name="SPusername">iics.dominicmichael.casino.healthyfoodiemob.username</string>
+    <string name="SPpassword">iics.dominicmichael.casino.healthyfoodiemob.password</string>
+    <string name="action_settings">Settings</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="aboutus">About Us</string>
+    <string name="namesss">Casino, Dominic\nCarcha, Catherine\nDavid, Jazmine\nPons, Scott\nUST-IICS</string>
+
+
+    <!-- Login & Register -->
+
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="confirm">Confirm password:</string>
+    <string name="name">Name:</string>
+
+    <string name="enteryourname">Enter your name</string>
+    <string name="enterusername">Enter username</string>
+    <string name="enterpassword">Enter password</string>
+    <string name="reenterpassword">Re-enter password</string>
+
+    <string name="register">REGISTER</string>
+    <string name="cancel">Cancel</string>
+    <string name="noaccountyet">Sign Up Here!</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="welcome">WELCOME TO HEALTHY FOODIE NUTRITION APP!</string>
+    <string name="welcs">Healthy Foodie is an interactive web and mobile application designed to teach
+        the basic nutritional food groups and healthy food practices that will help the children recognize
+        healthy foods and the value of healthy eating habits.</string>
+    <string name="pretest">PRETEST</string>
+    <string name="go_foods">GO FOOD</string>
+    <string name="glow_foods">GLOW FOOD</string>
+    <string name="grow_foods">GROW FOOD</string>
+    <string name="enter_question_here">ENTER QUESTION HERE</string>
+    <string name="name_of_food">name of food</string>
+    <string name="post_test">POST TEST</string>
+    <string name="student_acount">STUDENT ACOUNT</string>
+    <string name="student_information">STUDENT INFORMATION</string>
+    <string name="student_pretest_result">STUDENT PRETEST RESULT</string>
+    <string name="student_post_test_result">STUDENT POST TEST RESULT</string>
+    <string name="admin_login">ADMIN LOGIN</string>
+    <string name="i_want_it_randomize">I WANT IT RANDOMIZE</string>
+    <string name="randomize_post_test_questions">RANDOMIZE POST TEST QUESTIONS?</string>
+    <string name="randomize_pretest_questions">RANDOMIZE PRETEST QUESTIONS?</string>
+    <string name="quiz_settings">QUIZ SETTINGS</string>
+
+
+</resources>

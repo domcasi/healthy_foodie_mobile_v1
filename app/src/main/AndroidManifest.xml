@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="iics.casino.dominicmichael.healthy_foodie_mobile">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".homepage" />
+        <activity android:name=".loginpage" />
+        <activity android:name=".registrationpage" />
+        <activity android:name=".about_uspage" />
+        <activity android:name=".peoplebehind" />
+        <activity android:name=".testpage" />
+        <activity android:name=".adminpage" />
+        <activity android:name=".pretest_page" />
+        <activity android:name=".posttest_page" />
+        <activity android:name=".user_accountpage" />
+        <activity android:name=".admin_login" />
+        <activity android:name=".quiz_settings"></activity>
+    </application>
+
+</manifest>

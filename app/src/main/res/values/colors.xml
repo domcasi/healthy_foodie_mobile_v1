@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#64dc3f</color>
+    <color name="colorPrimaryDark">#439e5b</color>
+    <color name="colorAccent">#aaffffff</color>
+
+    <color name="gold">#ffd700</color>
+    <color name="grey">#d5d5d5</color>
+    <color name="transpa_grey">#3d747474</color>
+
+    <color name="red">#d6ff0000</color>
+    <color name="orange">#f8ffb834</color>
+    <color name="yellow">#ffff00</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="indigo">#4b0082</color>
+    <color name="violet">#8a2be2</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="light_goldenrod_yellow">#fafad2</color>
+    <color name="azure">#3f4e4e4e</color>
+    <color name="snow2">#eee9e9</color>
+    <color name="background_color">#8d8ab186</color>
+    <color name="text_color">#fff6c2</color>
+    <color name="button_color">#e2debe</color>
+
+</resources>
