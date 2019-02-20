@@ -10,9 +10,9 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="match_parent"
+        android:layout_width="316dp"
         android:layout_height="41dp"
-        android:layout_marginStart="20dp"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/people_behind_healthy_foodie"
@@ -30,23 +30,16 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:layout_marginEnd="199dp"
-                android:layout_marginStart="8dp"
                 android:background="@color/background_color"
-                android:orientation="vertical"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="199dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="10dp"
                     android:text="@string/objectives"
                     android:textColor="@color/text_color"
                     android:textSize="30sp"
@@ -57,9 +50,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="324dp"
                     android:gravity="center"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingStart="15dp"
                     android:text="@string/obj"
                     android:textSize="18sp" />
 
@@ -68,8 +58,6 @@
             <LinearLayout
                 android:layout_width="362dp"
                 android:layout_height="299dp"
-                android:layout_marginEnd="199dp"
-                android:layout_marginStart="8dp"
                 android:background="@color/background_color"
                 android:orientation="vertical">
 
@@ -77,9 +65,6 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/transpa_grey"
                     android:text="@string/purpose"
                     android:textColor="@color/text_color"
                     android:textSize="30sp"
@@ -89,20 +74,15 @@
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/transpa_grey"
                     android:gravity="center"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingStart="15dp"
                     android:text="@string/pur"
                     android:textSize="18sp" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="362dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
                 android:layout_marginTop="10dp"
                 android:background="@color/background_color"
                 android:orientation="vertical">
@@ -111,8 +91,6 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
                     android:text="@string/product_perspective"
                     android:textColor="@color/text_color"
                     android:textSize="30sp"
@@ -123,9 +101,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="264dp"
                     android:gravity="center"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingStart="15dp"
                     android:text="@string/perspective"
                     android:textSize="18sp" />
             </LinearLayout>

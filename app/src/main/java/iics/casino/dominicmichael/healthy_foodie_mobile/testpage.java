@@ -14,15 +14,14 @@ public class testpage extends AppCompatActivity {
 
     private boolean isFABOpen = false;
     FloatingActionButton fab1, fab2, fab3, fab4, fab5;
-
+    Button preee, pooost;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_testpage);
 
-        Button takepretest = (Button) findViewById(R.id.takepretest_button);
-        Button takeposttest = (Button) findViewById(R.id.takepretest_button);
-        Button playgame = (Button) findViewById(R.id.playgame_button);
+        preee = (Button) findViewById(R.id.pretestbutt);
+        pooost = (Button) findViewById(R.id.postestbutt);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab1 = (FloatingActionButton) findViewById(R.id.fab1);
         fab2 = (FloatingActionButton) findViewById(R.id.fab2);
@@ -76,18 +75,18 @@ public class testpage extends AppCompatActivity {
             }
         });
 
-        takepretest.setOnClickListener(new View.OnClickListener() {
+        preee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent initiate_pretest = new Intent(getApplicationContext(), pretest_page.class);
-                startActivity(initiate_pretest);
+                Intent gotoPre = new Intent(getApplicationContext(), pretest_page.class);
+                startActivity(gotoPre);
             }
         });
-        takeposttest.setOnClickListener(new View.OnClickListener() {
+        pooost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent initiate_posttest = new Intent(getApplicationContext(), posttest_page.class);
-                startActivity(initiate_posttest);
+                Intent gotoPos = new Intent(getApplicationContext(), posttest_page.class);
+                startActivity(gotoPos);
             }
         });
     }

@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="382dp"
-        android:layout_height="616dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -35,8 +35,9 @@
         <EditText
             android:id="@+id/input_username"
             style="@style/contents"
-            android:layout_width="350dp"
+            android:layout_width="300dp"
             android:layout_height="40dp"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="@string/enterusername"
             android:inputType="textPersonName"
@@ -49,8 +50,9 @@
         <EditText
             android:id="@+id/input_password"
             style="@style/contents"
-            android:layout_width="350dp"
+            android:layout_width="300dp"
             android:layout_height="40dp"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="@string/enterpassword"
             android:inputType="textPassword"
@@ -62,8 +64,9 @@
         <CheckBox
             android:id="@+id/checkBox"
             style="@android:style/Widget.CompoundButton.CheckBox"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Remember me ♪"
             android:textColor="@android:color/background_light"
             android:visibility="visible" />
