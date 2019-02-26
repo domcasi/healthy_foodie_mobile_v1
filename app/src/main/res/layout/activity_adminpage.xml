@@ -6,85 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/anotherbg"
-    tools:context=".homepage">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="357dp"
-        android:layout_height="305dp"
-        android:layout_marginLeft="15dp"
-        fab:srcCompat="@drawable/header"
-        android:contentDescription="@string/todo"
-        android:layout_marginStart="15dp" />
+    tools:context=".adminpage">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="4dp"
+        android:layout_height="3dp"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="match_parent"
             android:background="@color/colorPrimaryDark"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab3"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin_mini"
-        android:background="@color/colorPrimaryDark"
-        app:backgroundTint="@color/colorPrimaryDark"
-        app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_dialog_info" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab5"
+    <include
+        layout="@layout/content_adminhome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin_mini"
-        android:background="@color/colorPrimaryDark"
-        app:srcCompat="@drawable/ic_action_shutdown"
-        fab:backgroundTint="@color/colorPrimaryDark"
-        fab:fabSize="mini" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin_mini"
-        android:background="@color/colorPrimaryDark"
-        app:srcCompat="@drawable/ic_action_account_circle"
-        fab:backgroundTint="@color/colorPrimaryDark"
-        fab:fabSize="mini" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab2"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin_mini"
-        android:background="@color/colorPrimaryDark"
-        app:backgroundTint="@color/colorPrimaryDark"
-        app:fabSize="mini"
-        app:srcCompat="@drawable/ic_action_test" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab1"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin_mini"
-        android:background="@color/colorPrimaryDark"
-        app:backgroundTint="@color/colorPrimaryDark"
-        app:fabSize="mini"
-        app:srcCompat="@drawable/ic_action_home" />
+        android:layout_height="match_parent" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -94,7 +35,7 @@
         android:layout_margin="@dimen/fab_margin"
         android:background="@color/colorPrimaryDark"
         app:backgroundTint="@color/colorPrimaryDark"
-        app:srcCompat="@drawable/ic_action_menu" />
+        app:srcCompat="@drawable/ic_action_shutdown" />
 
 
     <!--<com.github.clans.fab.FloatingActionMenu-->

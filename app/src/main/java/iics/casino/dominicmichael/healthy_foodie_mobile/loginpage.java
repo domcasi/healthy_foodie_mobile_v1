@@ -35,6 +35,7 @@ public class loginpage extends AppCompatActivity {
         setContentView(R.layout.activity_loginpage);
 
         Button noAccountBtn = findViewById(R.id.noaccount_btn);
+        Button AdminLoginBtn = findViewById(R.id.admin_lgn_btn);
         Button loginBtn = findViewById(R.id.login_btn);
         usernameEditText = findViewById(R.id.input_username);
         passwordEditText = findViewById(R.id.input_password);
@@ -92,6 +93,13 @@ public class loginpage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent movetoRegister = new Intent(getApplicationContext(), registrationpage.class);
                 startActivity(movetoRegister);
+            }
+        });
+        AdminLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent adminl = new Intent(getApplicationContext(), admin_login.class);
+                startActivity(adminl);
             }
         });
 

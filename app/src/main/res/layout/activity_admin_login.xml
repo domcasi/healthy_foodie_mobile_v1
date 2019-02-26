@@ -17,7 +17,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@color/transpa_grey"
+        android:background="#b7747474"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,11 @@
             android:id="@+id/textView30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/admin_login" />
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/admin_login"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/input_username"
@@ -44,7 +48,7 @@
             android:layout_width="350dp"
             android:layout_height="40dp"
             android:ems="10"
-            android:hint="@string/enterusername"
+            android:hint="Enter Email"
             android:inputType="textPersonName"
             android:padding="10dp"
             android:textColor="@color/white"

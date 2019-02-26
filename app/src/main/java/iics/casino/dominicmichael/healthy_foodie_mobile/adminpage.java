@@ -33,11 +33,8 @@ public class adminpage extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!isFABOpen){
-                    showFABMenu();
-                }else{
-                    closeFABMenu();
-                }
+                Intent logOut = new Intent(getApplicationContext(), loginpage.class);
+                startActivity(logOut);
             }
         });
 
@@ -69,7 +66,7 @@ public class adminpage extends AppCompatActivity {
                 startActivity(gotoAccount);
             }
         });
-        fab5.setOnClickListener(new View.OnClickListener() {
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent logOut = new Intent(getApplicationContext(), loginpage.class);

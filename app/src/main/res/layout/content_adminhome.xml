@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_adminpage">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="225dp"
+        android:layout_height="185dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/studentresult_butt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student's Results" />
+
+        <Button
+            android:id="@+id/export_butt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Export" />
+
+        <Button
+            android:id="@+id/quiz_opt_butt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz Option" />
+
+        <Button
+            android:id="@+id/dash_butt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard" />
+    </LinearLayout>
+
+</LinearLayout>
