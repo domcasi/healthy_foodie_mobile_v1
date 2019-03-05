@@ -77,16 +77,6 @@
             android:layout_margin="10dp"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/login_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
-                android:text="@string/login"
-                android:textColor="@color/snow2" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -94,14 +84,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/admin_lgn_btn"
+                    android:id="@+id/login_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimaryDark"
-                    android:text="I AM AN ADMIN"
-                    android:textColor="@android:color/background_light" />
+                    android:text="@string/login"
+                    android:textColor="@color/snow2" />
 
                 <Button
                     android:id="@+id/noaccount_btn"

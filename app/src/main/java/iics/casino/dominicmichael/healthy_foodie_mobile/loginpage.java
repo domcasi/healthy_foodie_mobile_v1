@@ -1,23 +1,36 @@
 package iics.casino.dominicmichael.healthy_foodie_mobile;
 
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-
+import iics.casino.dominicmichael.healthy_foodie_mobile.app.AppController;
 
 public class loginpage extends AppCompatActivity {
 
-    private static final String TAG = "LoginPage";
+    private String urlForJsonObject = AppController.baseUrl+"get_all_products.php";
+    private String jsonResponse;
+    private ListView productsList;
+    private TextView noConnection;
+    private TextView viewDescription;
+
+    private static String TAG = MainActivity.class.getSimpleName();
+    private ProgressDialog pDialog;
     private SharedPreferences mPreferences;
     private SharedPreferences.Editor mEditor;
     DatabaseHelper mDatabaseHelper;
@@ -35,7 +48,6 @@ public class loginpage extends AppCompatActivity {
         setContentView(R.layout.activity_loginpage);
 
         Button noAccountBtn = findViewById(R.id.noaccount_btn);
-        Button AdminLoginBtn = findViewById(R.id.admin_lgn_btn);
         Button loginBtn = findViewById(R.id.login_btn);
         usernameEditText = findViewById(R.id.input_username);
         passwordEditText = findViewById(R.id.input_password);
@@ -46,7 +58,18 @@ public class loginpage extends AppCompatActivity {
         password = passwordEditText.getText().toString();
         checkbox = checkBoxcheckBox.getText().toString();
 
-
+        pDialog = new ProgressDialog(this);
+        pDialog.setMessage("Please Wait....");
+        pDialog.setCancelable(false);
+//
+//        if (checkForConnection()){
+//            viewDescription.setVisibility(View.VISIBLE);
+//            makeJsonObjectRequest();
+//        }
+//        else{
+//            viewDescription.setVisibility(View.GONE);
+//            noConnection.setVisibility(View.VISIBLE);
+//        }
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,13 +118,6 @@ public class loginpage extends AppCompatActivity {
                 startActivity(movetoRegister);
             }
         });
-        AdminLoginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent adminl = new Intent(getApplicationContext(), admin_login.class);
-                startActivity(adminl);
-            }
-        });
 
         mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mEditor = mPreferences.edit();
@@ -130,5 +146,123 @@ public class loginpage extends AppCompatActivity {
         homeIntent.addCategory( Intent.CATEGORY_HOME );
         homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(homeIntent);
+    }
+//
+//    private void makeJsonObjectRequest() {
+//
+//        showpDialog();
+//
+//        final List<String> productsArrayList = new ArrayList<String>();
+//
+//
+//        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
+//                urlForJsonObject,
+//                null,
+//                new Response.Listener<JSONObject>() {
+//
+//                    @Override
+//                    public void onResponse(JSONObject response) {
+//                        Log.d(TAG, response.toString()); //for android log cat??
+//
+//                        try {
+//                            // Parsing json object response
+//                            // response will be a json object
+//                            int success = response.getInt("success");
+//                            if (success == 1){
+//                                JSONArray products = response.getJSONArray("account");
+//                                for(int i =0; i<products.length(); i++){
+//                                    JSONObject phone = products.getJSONObject(i);
+//                                    String username = phone.get("Username").toString();
+//                                    String password = phone.get("Password").toString();
+//                                    String type = phone.get("Type").toString();
+//                                    String progress = phone.get("Progress").toString();
+//                                    String status = phone.get("Status").toString();
+//                                    jsonResponse = "";
+//                                    jsonResponse += "UserName: " + username + "\n\n";
+//                                    jsonResponse += "Password: " + password + "\n\n";
+//                                    jsonResponse += "Type: " + type + "\n\n";
+//                                    jsonResponse += "Progress: " + progress + "\n\n";
+//                                    jsonResponse += "Status: " + status + "\n\n";
+//                                    productsArrayList.add(jsonResponse);
+//
+//                                }
+//
+//                                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
+//                                        loginpage.this,
+//                                        android.R.layout.simple_list_item_1,
+//                                        productsArrayList );
+//
+//                                productsList.setAdapter(arrayAdapter);
+//                            }
+//                            else {
+//                                Toast.makeText(loginpage.this, "No products in the database", Toast.LENGTH_LONG).show();
+//                            }
+//
+//                        } catch (JSONException e) {
+//                            e.printStackTrace();
+//                            Toast.makeText(getApplicationContext(),
+//                                    "Error: " + e.getMessage(),
+//                                    Toast.LENGTH_LONG).show();
+//                        }
+//
+//                        hidepDialog();
+//
+//                    }
+//
+//                }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError volleyError) {
+//                VolleyLog.d(TAG,"Error: "+ volleyError.getMessage() );
+//                Toast.makeText(getApplicationContext(), volleyError.getMessage(), Toast.LENGTH_SHORT).show();
+//                hidepDialog();
+//            }
+//        });
+//        //adding request to request queue
+//        AppController.getmInstance().addToRequestQueue(jsonObjReq);
+//    }
+//
+//
+//
+//    private void showpDialog(){
+//        if(!pDialog.isShowing()){
+//            pDialog.show();
+//        }
+//    }
+//
+//    private void hidepDialog(){
+//        if(pDialog.isShowing()){
+//            pDialog.dismiss();
+//        }
+//    }
+//
+//    @Override
+//    public void onRefresh() {
+//        if (checkForConnection()){
+//            viewDescription.setVisibility(View.VISIBLE);
+//            noConnection.setVisibility(View.GONE);
+//            makeJsonObjectRequest();
+//            swipeLayout.setRefreshing(false);
+//
+//        }
+//        else{
+//            productsList.setVisibility(View.GONE);
+//            viewDescription.setVisibility(View.GONE);
+//            noConnection.setVisibility(View.VISIBLE);
+//            swipeLayout.setRefreshing(false);
+//
+//        }
+//    }
+
+    @Override
+    public void onDestroy() {
+        // You must call this or the ad adapter may cause a memory leak
+        super.onDestroy();
+    }
+
+    private Boolean checkForConnection() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }

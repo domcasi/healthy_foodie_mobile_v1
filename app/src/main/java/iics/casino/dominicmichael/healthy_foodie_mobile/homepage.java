@@ -3,14 +3,11 @@ package iics.casino.dominicmichael.healthy_foodie_mobile;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.github.clans.fab.FloatingActionMenu;
+import android.view.View;
 
 public class homepage extends AppCompatActivity {
 
@@ -115,7 +112,7 @@ public class homepage extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent logOut = new Intent(getApplicationContext(), adminpage.class);
+            Intent logOut = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(logOut);
             return true;
         }

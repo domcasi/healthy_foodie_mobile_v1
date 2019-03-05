@@ -123,7 +123,7 @@ public class testpage extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent logOut = new Intent(getApplicationContext(), adminpage.class);
+            Intent logOut = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(logOut);
             return true;
         }
