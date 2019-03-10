@@ -12,7 +12,7 @@ public class AppController extends Application {
 
     private static AppController mInstance;
 
-    public static String baseUrl= "http://192.168.1.7/codes/healthy_foodie_web/fourV2/student/ConnDB/"; //http://192.168.1.7/codes/healthy_foodie_web/fourV2/student/ConnDB/
+    public static String baseUrl= "http://192.168.1.4/codes/healthy_foodie_web/fourV2/student/ConnDB/"; //http://192.168.1.7/codes/healthy_foodie_web/fourV2/student/ConnDB/
     //https://healthyfoodieweb.000webhostapp.com/student/ConnDB/
     @Override
     public void onCreate() {
