@@ -14,13 +14,14 @@ public class testpage extends AppCompatActivity {
 
     private boolean isFABOpen = false;
     FloatingActionButton fab1, fab2, fab3, fab4, fab5;
-    Button preee, pooost;
+    Button preee, pooost, gaaame;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_testpage);
 
         preee = (Button) findViewById(R.id.pretestbutt);
+        gaaame = (Button) findViewById(R.id.playgamebutt);
         pooost = (Button) findViewById(R.id.postestbutt);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab1 = (FloatingActionButton) findViewById(R.id.fab1);
@@ -86,6 +87,13 @@ public class testpage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent gotoPos = new Intent(getApplicationContext(), posttest_page.class);
+                startActivity(gotoPos);
+            }
+        });
+        gaaame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gotoPos = new Intent(getApplicationContext(), GameActivity.class);
                 startActivity(gotoPos);
             }
         });

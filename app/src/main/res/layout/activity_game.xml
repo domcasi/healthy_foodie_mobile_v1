@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anotherbg"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:layout_margin="10dp"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#23222222"
+            app:srcCompat="@drawable/hflogov2" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:background="#4b4b4b"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <Button
+            android:id="@+id/postestbutt_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Proceed to Post Test"
+            android:textColor="@color/text_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

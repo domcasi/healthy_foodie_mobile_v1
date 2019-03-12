@@ -59,7 +59,8 @@
             <LinearLayout
                 android:layout_width="299dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="5dp">
 
                 <TextView
                     android:id="@+id/textView2"
@@ -69,8 +70,9 @@
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:padding="5dp"
                     android:text="@string/dr_florence_rochelle_gan"
-                    android:textColor="#2a2c2a"
+                    android:textColor="#444b46"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -82,6 +84,7 @@
                     android:layout_marginTop="50dp"
                     android:background="#a7fff6c4"
                     android:gravity="start"
+                    android:padding="5dp"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:paddingStart="15dp"
@@ -96,6 +99,7 @@
                     android:layout_marginBottom="20dp"
                     android:layout_marginTop="5dp"
                     android:background="#a7fff6c4"
+                    android:padding="5dp"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="@string/email"
@@ -108,7 +112,8 @@
                 android:layout_width="299dp"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="5dp">
 
                 <TextView
                     android:id="@+id/textView12"
@@ -117,8 +122,9 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="10dp"
+                    android:padding="5dp"
                     android:text="@string/iics_cnag_comdev"
-                    android:textColor="#2a2c2a"
+                    android:textColor="#444b46"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -129,6 +135,7 @@
                     android:layout_marginBottom="20dp"
                     android:background="#a7fff6c4"
                     android:gravity="start"
+                    android:padding="5dp"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:paddingStart="15dp"
@@ -144,6 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
+                android:padding="5dp"
                 android:text="@string/developers"
                 android:textColor="@color/text_color"
                 android:textSize="36sp"
@@ -155,14 +163,16 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="25dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="5dp">
 
                 <TextView
                     android:id="@+id/cname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="@string/catherine_bhel_carcha"
-                    android:textColor="#2a2c2a"
+                    android:textColor="#444b46"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -172,6 +182,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:background="#a7fff6c4"
+                    android:padding="5dp"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="@string/cathy"
@@ -186,6 +197,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="5dp"
                     android:background="#a7fff6c4"
+                    android:padding="5dp"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="@string/cathemail"
@@ -200,14 +212,16 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="25dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="5dp">
 
                 <TextView
                     android:id="@+id/dname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="@string/dominic_casino"
-                    android:textColor="#2a2c2a"
+                    android:textColor="#444b46"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -217,6 +231,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:background="#a7fff6c4"
+                    android:padding="5dp"
                     android:text="@string/doms"
                     android:textColor="#2a2c2a"
                     android:textSize="18sp" />
@@ -229,6 +244,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="5dp"
                     android:background="#a7fff6c4"
+                    android:padding="5dp"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="@string/domsemail"
@@ -243,14 +259,15 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="25dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="5dp">
 
                 <TextView
                     android:id="@+id/sname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/scott_pons"
-                    android:textColor="#2a2c2a"
+                    android:textColor="#444b46"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
