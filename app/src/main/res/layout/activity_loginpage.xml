@@ -32,6 +32,17 @@
             android:layout_marginTop="30dp"
             app:srcCompat="@drawable/header" />
 
+        <Button
+            android:id="@+id/adminbutt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="gulapanaticz"
+            android:textColor="#00ffffff"
+            tools:clickable="true"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
         <EditText
             android:id="@+id/input_username"
             style="@style/contents"
@@ -107,4 +118,5 @@
         </LinearLayout>
 
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

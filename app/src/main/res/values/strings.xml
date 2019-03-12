@@ -4,6 +4,7 @@
     <string name="todo">TODO</string>
 
     <string name="assessments">ASSESSMENTS</string>
+    <string name="admin">Administrator</string>
     <string name="take_pretest">TAKE PRETEST</string>
     <string name="take_post_test">TAKE POST TEST</string>
     <string name="play_game">PLAY GAME</string>

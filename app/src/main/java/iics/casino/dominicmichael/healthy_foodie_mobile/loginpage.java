@@ -50,6 +50,7 @@ public class loginpage extends AppCompatActivity {
         setContentView(R.layout.activity_loginpage);
 
         Button noAccountBtn = findViewById(R.id.noaccount_btn);
+        final Button AdminBtn = findViewById(R.id.adminbutt);
         Button loginBtn = findViewById(R.id.login_btn);
         usernameEditText = findViewById(R.id.input_username);
         passwordEditText = findViewById(R.id.input_password);
@@ -90,7 +91,13 @@ public class loginpage extends AppCompatActivity {
                         startActivity(goToHomePage);
                     }
                 }
-
+                AdminBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent gotoPos = new Intent(getApplicationContext(), AdminActivity.class);
+                        startActivity(gotoPos);
+                    }
+                });
                 if(checkBoxcheckBox.isChecked()){
                     mEditor.putString(getString(R.string.SPcheckbox),"True");
                     mEditor.commit();
