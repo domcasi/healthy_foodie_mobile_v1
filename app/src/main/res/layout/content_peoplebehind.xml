@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
     android:background="@drawable/anotherbg"
     android:orientation="vertical"
     tools:context=".peoplebehind">
@@ -33,12 +34,14 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
 
         <LinearLayout
             android:layout_width="306dp"
             android:layout_height="wrap_content"
-            android:layout_margin="31dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="31dp"
             android:background="@color/background_color"
             android:orientation="vertical">
 
@@ -67,6 +70,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:text="@string/dr_florence_rochelle_gan"
+                    android:textColor="#2a2c2a"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -76,21 +80,26 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:layout_marginTop="50dp"
+                    android:background="#a7fff6c4"
                     android:gravity="start"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:paddingStart="15dp"
                     android:text="@string/gan"
+                    android:textColor="#2a2c2a"
                     android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#a7fff6c4"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="@string/email"
+                    android:textColor="#2a2c2a"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -98,6 +107,7 @@
             <LinearLayout
                 android:layout_width="299dp"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -106,7 +116,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
                     android:text="@string/iics_cnag_comdev"
+                    android:textColor="#2a2c2a"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -114,12 +126,14 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#a7fff6c4"
                     android:gravity="start"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:paddingStart="15dp"
                     android:text="@string/insert_info_here"
+                    android:textColor="#2a2c2a"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -128,7 +142,7 @@
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="@string/developers"
                 android:textColor="@color/text_color"
@@ -148,6 +162,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/catherine_bhel_carcha"
+                    android:textColor="#2a2c2a"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -155,18 +170,26 @@
                     android:id="@+id/cbio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="#a7fff6c4"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="@string/cathy"
+                    android:textColor="#2a2c2a"
                     android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/cemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#a7fff6c4"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="@string/cathemail"
+                    android:textColor="#2a2c2a"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -184,6 +207,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/dominic_casino"
+                    android:textColor="#2a2c2a"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -191,23 +215,31 @@
                     android:id="@+id/dbio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="#a7fff6c4"
                     android:text="@string/doms"
+                    android:textColor="#2a2c2a"
                     android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/demail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#a7fff6c4"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="@string/domsemail"
+                    android:textColor="#2a2c2a"
                     android:textSize="18sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="25dp"
@@ -218,6 +250,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/scott_pons"
+                    android:textColor="#2a2c2a"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -225,18 +258,25 @@
                     android:id="@+id/sbio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="#a7fff6c4"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="@string/scott"
+                    android:textColor="#2a2c2a"
                     android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/semail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#a7fff6c4"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="@string/scottemail"
+                    android:textColor="#2a2c2a"
                     android:textSize="18sp" />
 
             </LinearLayout>

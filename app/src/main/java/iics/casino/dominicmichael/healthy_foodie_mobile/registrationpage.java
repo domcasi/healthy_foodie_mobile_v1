@@ -1,102 +1,96 @@
 package iics.casino.dominicmichael.healthy_foodie_mobile;
 
-import android.support.v7.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.Toast;
-
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import iics.casino.dominicmichael.healthy_foodie_mobile.app.AppController;
 
 public class registrationpage extends AppCompatActivity {
 
-    private EditText username, password, type, progress, cpass, status, age;
-    private Button btn_register;
-    private RadioButton account_hybrid, account_testonly;
-    private static String URL_REGIST = AppController.baseUrl+"register.php";
+    DatabaseHelper mDatabaseHelper;
+
+    private EditText nameEditText;
+    private EditText usernameEditText;
+    private EditText passwordEditText;
+    private EditText confirmEditText;
+    String name, username, password, confirmPassword;
+
+    String message;
+    int duration = Toast.LENGTH_SHORT;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrationpage);
 
-        username = findViewById(R.id.input_username);
-        password = findViewById(R.id.input_password);
-        cpass = findViewById(R.id.input_confirm);
-        age = findViewById(R.id.input_age);
-        btn_register = findViewById(R.id.reg_btn);
-        btn_register.setOnClickListener(new View.OnClickListener() {
+        Button cancelBtn = findViewById(R.id.cancel_btn);
+        Button registerBtn = findViewById(R.id.reg_btn);
+        nameEditText = findViewById(R.id.input_name);
+        usernameEditText = findViewById(R.id.input_username);
+        passwordEditText = findViewById(R.id.input_password);
+        confirmEditText = findViewById(R.id.input_confirm);
+
+        mDatabaseHelper = new DatabaseHelper(this);
+
+        name = nameEditText.getText().toString();
+        username = usernameEditText.getText().toString();
+        password = passwordEditText.getText().toString();
+        confirmPassword = confirmEditText.getText().toString();
+
+        registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Regist();
+                name = nameEditText.getText().toString();
+                username = usernameEditText.getText().toString();
+                password = passwordEditText.getText().toString();
+                confirmPassword = confirmEditText.getText().toString();
+
+                if (name.length() != 0 && username.length() != 0 && password.length() != 0 && confirmPassword.length() != 0) {
+
+                    if (password.equals(confirmPassword)) {
+                        AddData(name, username, password);
+                        nameEditText.setText("");
+                        usernameEditText.setText("");
+                        passwordEditText.setText("");
+                        confirmEditText.setText("");
+                    } else {
+                        toastMessage("Password and Confirm Password did not match");
+                        nameEditText.setText("");
+                        usernameEditText.setText("");
+                        passwordEditText.setText("");
+                        confirmEditText.setText("");
+                    }
+
+                } else {
+                    toastMessage("Pls fill up all the information");
+                }
             }
         });
 
+        cancelBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToLogin = new Intent(getApplicationContext(), loginpage.class);
+                startActivity(goToLogin);
+            }
+        });
     }
 
-    private void Regist(){
-        final String username = this.username.getText().toString().trim();
-        final String password = this.password.getText().toString().trim();
-        final String cpass = this.cpass.getText().toString().trim();
+    public void AddData(String name, String username, String password) {
+        boolean insertData = mDatabaseHelper.addData(name, username, password);
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_REGIST,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try{
-                            JSONObject jsonObject = new JSONObject(response);
-                            String success = jsonObject.getString("success");
+        if (insertData) {
+            toastMessage("Welcome " + name);
+            Intent goToHomePage = new Intent(getApplicationContext(), homepage.class);
+            startActivity(goToHomePage);
+        }
+    }
 
-                            if(success.equals("1")){
-                                Toast.makeText(registrationpage.this, "Registeration Success!", Toast.LENGTH_SHORT).show();
-                            }
-                        } catch(JSONException e) {
-                            e.printStackTrace();
-                            Toast.makeText(registrationpage.this, "Registration Error!", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-
-                },
-                    new Response.ErrorListener() {
-                        @Override
-                                public void onErrorResponse(VolleyError error){
-                                    Toast.makeText(registrationpage.this,"Registration Error!" + error.toString(), Toast.LENGTH_LONG).show();
-
-                        }
-                    })
-        {
-            @Override
-            protected Map<String, String>getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                params.put("Id", "1");
-                params.put("Username", username);
-                params.put("Password", password);
-                params.put("Type", "Hybrid");
-                params.put("Status", "pretest");
-                params.put("Progress", "0");
-                //params.put("type", type);
-
-                return params;
-            }
-        };
-
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
-
+    private void toastMessage(String message) {
+        Toast.makeText(this, message, duration).show();
     }
 }
